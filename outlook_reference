@@ -1,0 +1,61 @@
+https://dev.office.com/reference/add-ins/outlook/1.1/index
+https://msdn.microsoft.com/en-us/vba/outlook-vba/articles/customizing-outlook-using-com-add-ins
+https://docs.microsoft.com/en-us/office/dev/add-ins/design/add-in-design?product=outlook
+https://docs.microsoft.com/en-us/visualstudio/vsto/how-to-programmatically-perform-actions-when-an-e-mail-message-is-received
+
+
+/**
+*
+* THINGS TO REMEMBER
+*
+*/
+
+<Id>string </Id>
+
+Specifies the unique ID of your Office Add-in as a GUID.
+
+
+<IconUrl DefaultValue="string"/>
+
+For a mail add-in, the icon is displayed in the  File > Manage add-ins UI (Outlook) or Settings > Manage add-ins UI (Outlook Web App). For a content or task pane add-in, the icon is displayed in the Insert > Add-ins UI. For all add-in types, the icon is also used on the Office Store site, if you publish your add-in to the Office Store.
+Image formats: GIF, JPG, PNG, EXIF, BMP or TIFF. 
+For content and task pane apps, the image specified must be 32 x 32 pixels.
+For mail apps, the image must be 64 x 64 pixels. 
+You should also specify an icon for use with Office host applications running on high DPI screens using the HighResolutionIconUrl element.
+
+
+****--- 
+
+<AllowSnapshot> [true | false]</AllowSnapshot> user jo minimum version set kiya hai usse niche ke versions hai to ushe addin dikhega ya nhi.by default true.
+
+****--- 
+
+<AlternateId>string </AlternateId> ID is issued by the Office to the Add-ins.
+
+****--- 
+Specifies an additional domain that will be used to load pages in the add-in window.
+Ex:localhost:3000 etc
+<AppDomain>string </AppDomain>
+
+<AppDomains>
+    <AppDomain>https:localhost:3000</AppDomain>
+    <AppDomain>AppDomain2</AppDomain>
+</AppDomains>
+
+
+
+CALLBACK's
+
+function(AsyncResult){
+
+}
+
+AsyncResult.value	Access the values in the current selection, which are returned in the data structure or format you specified with the  coercionType parameter.
+
+AsyncResult.status	Determine the success or failure of the operation.
+AsyncResult.error	Access an Error object that provides error information if the operation failed.
+AsyncResult.asyncContext	Access your user-defined  object or value, if you passed one as the asyncContext parameter.
+
+
+
+
