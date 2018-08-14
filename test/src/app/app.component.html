@@ -1,0 +1,26 @@
+<header class="ms-welcome__header ms-bgColor-neutralLighter ms-u-fadeIn500">
+    <img width="90" height="90" src="../../assets/logo-filled.png" alt="test" title="test" />
+    <h1 class="ms-fontSize-su ms-fontWeight-light ms-fontColor-neutralPrimary">{{welcomeMessage}}</h1>
+</header>
+<main class="ms-welcome__main">
+    <h2 class="ms-font-xl ms-fontWeight-semilight ms-fontColor-neutralPrimary ms-u-slideUpIn20"> This is the test addin that will allow you to fill the text inside the body. </h2>
+    <ul class="ms-List ms-welcome__features ms-u-slideUpIn10">
+        <li class="ms-ListItem">
+          <label for="text">Enter text to fill in the Body :</label>
+          <input class="form-control" type="text" [(ngModel)]='textbind'/>  
+        </li>
+        <li class="ms-ListItem">
+            <!--<button class="btn btn-default">Insert</button>-->
+            <span class="ms-font-m ms-fontColor-neutralPrimary">
+                <button class="btn btn-success" (click)="callthis(textbind)">Test this button</button>
+            </span>
+        </li>
+    </ul>
+    <br />
+    <br />
+    <!--<p class="ms-font-l">Modify the source files, then click <b>Run</b>.</p>
+    <div role="button" class="ms-welcome__action ms-Button ms-Button--hero ms-u-slideUpIn20" (click)="run()">
+        <span class="ms-Button-label">Run</span>
+        <span class="ms-Button-icon"><i class="ms-Icon ms-Icon--ChevronRight"></i></span>
+    </div>-->
+</main>
