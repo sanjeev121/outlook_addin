@@ -1,0 +1,30 @@
+1.Install the project or Clone the repo using git account.
+
+https://github.com/sanjeev121/outlook_addin.git
+
+2.Install dependencies using 
+
+npm i 
+
+3.serve the project using
+
+npm start
+
+4.To test the application just go to the Outlook office in browser.Login to the outlook account
+	a.Go to the new message.
+	b.In the compose look for the dropdown in the icons available.
+	c.Select manage addin in the dropdown.
+	d.Select My Addins option > Select custom Addin > Install from file > Select the file i.e XML
+	e.Reload the browser and follow same to step c. to see Your addin.
+
+You can refer to the docs porvided by the Office to how to install and use addins. 
+
+https://dev.office.com/reference/add-ins/outlook/1.1/index
+
+Addin Prequesities :
+
+Basic setup uses:
+	XML/manifest file
+	HTML/javascript along with angular 5
+
+
